@@ -1,0 +1,42 @@
+{
+  "name": "chatroom",
+  "description": "A simple online chatroom to talk with friends and stuff.",
+  "version": "0.1.0",
+  "author": "Morten Hillbom",
+  "dependencies": {
+    "connected-react-router": "^4.3.0",
+    "prop-types": "^15.6.0",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "react-redux": "^5.0.6",
+    "react-router-dom": "^4.2.2",
+    "history": "^4.7.2",
+    "redux": "^3.7.0",
+    "redux-devtools-extension": "^2.13.0",
+    "redux-thunk": "^2.2.0",
+    "redux-actions": "^2.2.1",
+    "styled-components": "^2.2.3",
+    "@cognite/react-scripts": ">=2"
+  },
+  "devDependencies": {
+    "node-plop": "^0.5.5",
+    "plop": "^1.7.4",
+    "enzyme": "^3.2.0",
+    "enzyme-adapter-react-16": "^1.1.0",
+    "nock": "^9.0.14",
+    "redux-mock-store": "^1.2.3"
+  },
+  "scripts": {
+    "start": "cognite-react-scripts start",
+    "build": "cognite-react-scripts build",
+    "test": "cognite-react-scripts test --env=jsdom",
+    "eject": "cognite-react-scripts eject",
+    "precommit": "lint --fix",
+    "lint": "eslint .",
+    "generate": "plop --plopfile generators/index.js"
+  },
+  "engines": {
+    "npm": ">=4",
+    "node": ">=6"
+  }
+}
