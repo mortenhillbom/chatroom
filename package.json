@@ -4,26 +4,32 @@
   "version": "0.1.0",
   "author": "Morten Hillbom",
   "dependencies": {
+    "@cognite/react-scripts": ">=2",
+    "bufferutil": "^3.0.4",
     "connected-react-router": "^4.3.0",
+    "engine.io": "^3.2.0",
+    "fs": "^0.0.1-security",
+    "history": "^4.7.2",
     "prop-types": "^15.6.0",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
     "react-redux": "^5.0.6",
     "react-router-dom": "^4.2.2",
-    "history": "^4.7.2",
     "redux": "^3.7.0",
+    "redux-actions": "^2.2.1",
     "redux-devtools-extension": "^2.13.0",
     "redux-thunk": "^2.2.0",
-    "redux-actions": "^2.2.1",
+    "socket.io": "^2.1.0",
     "styled-components": "^2.2.3",
-    "@cognite/react-scripts": ">=2"
+    "utf-8-validate": "^4.0.1",
+    "uws": "^9.147.0"
   },
   "devDependencies": {
-    "node-plop": "^0.5.5",
-    "plop": "^1.7.4",
     "enzyme": "^3.2.0",
     "enzyme-adapter-react-16": "^1.1.0",
     "nock": "^9.0.14",
+    "node-plop": "^0.5.5",
+    "plop": "^1.7.4",
     "redux-mock-store": "^1.2.3"
   },
   "scripts": {

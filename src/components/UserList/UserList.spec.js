@@ -1,15 +1,12 @@
 import React from 'react';
 import { shallow, mount, render } from 'enzyme';
-import Counter from './Counter';
+import UserList from './UserList';
 
-describe('Counter', () => {
+describe('UserList', () => {
   it('Renders without exploding', () => {
     const wrapper = mount(
-      <Counter
-        increment={() => {}}
-        incrementIfOdd={() => {}}
-        decrement={() => {}}
-        counter={0}
+      <UserList
+        users={() => {}}
       />
     );
     expect(wrapper).toHaveLength(1);

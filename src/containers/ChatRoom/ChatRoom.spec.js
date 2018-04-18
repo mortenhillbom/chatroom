@@ -1,8 +1,8 @@
 // import React from 'react';
 // import configureStore from 'redux-mock-store';
 // import nock from 'nock';
-import * as Counter from './Counter';
+import * as ChatRoom from './ChatRoom';
 
-describe('Counter', () => {
+describe('ChatRoom', () => {
   it('Should have tests that uses the uses action creators as entry point');
 });

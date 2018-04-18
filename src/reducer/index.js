@@ -1,8 +1,8 @@
 import { combineReducers } from 'redux';
-import CounterReducer from 'modules/Counter';
+import ChatRoomReducer from 'modules/ChatRoom';
 
 const rootReducer = combineReducers({
-  counter: CounterReducer,
+  chatroom: ChatRoomReducer,
 });
 
 export default rootReducer;

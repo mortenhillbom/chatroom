@@ -1,6 +1,5 @@
 import React from 'react';
-import { CounterContainer } from 'containers';
-import { Header } from 'components/Header';
+import { ChatRoomContainer } from 'containers';
 import { Route } from 'react-router-dom';
 import { ConnectedRouter } from 'connected-react-router';
 import styled from 'styled-components';
@@ -14,8 +13,7 @@ function Routes() {
   return (
     <ConnectedRouter history={history}>
       <Container>
-        <Header />
-        <Route exact path="/" component={CounterContainer} />
+        <Route exact path="/" component={ChatRoomContainer} />
       </Container>
     </ConnectedRouter>
   );

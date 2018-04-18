@@ -1,3 +1,3 @@
-import CounterContainer from './Counter';
+import ChatRoomContainer from './ChatRoom';
 
-export { CounterContainer };
+export { ChatRoomContainer };

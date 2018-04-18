@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from 'assets/logo.svg';
+import logo from 'assets/mortenerpen.png';
 import styled, { keyframes } from 'styled-components';
 
 const rotate360 = keyframes`
@@ -26,7 +26,7 @@ const TopBar = styled.div`
 const Header = () => (
   <TopBar>
     <img src={logo} className="redux-logo" alt="logo" />
-    <h2>Welcome to Create Redux App</h2>
+    <h2>Mortens Chatroom</h2>
   </TopBar>
 );
 
