@@ -5,7 +5,7 @@ Har brukt react og redux (brukte boilerplaten deres) og websockets.
 
 Fikk ikke gjort den så innmari pen, men håper det går greit 😅
 
-Bare å sende meg en e-post hvis det er noe dere vil vite! Ellers kan vi jo ta eit litta skypings igjen!
+Bare å sende meg en e-post hvis det er noe dere vil vite! Ellers kan vi jo ta ei litta skypings igjen!
 
 Live demo kan dere finne [HER!](http://35.204.2.177:5000/)
 
