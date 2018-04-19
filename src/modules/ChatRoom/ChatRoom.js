@@ -33,6 +33,7 @@ export default (state = initialState, action) => {
         currentUser: {
           id: action.payload.id,
           username: action.payload.username,
+          color: action.payload.color,
         },
       };
     case GET_USERLIST:

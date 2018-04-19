@@ -1,5 +1,8 @@
 const io = require('socket.io')();
 const userList = [];
+/* Gi folka litt random farger, denne itereres over, burde sikker vært lenger ev. random */
+const colors = ['#F44336', '#2196F3', '#E91E63', '#009688', '#9C27B0', '#3F51B5', '#4CAF50', '#FFC107', '#00BCD4'];
+let colorIdx = 0;
 
 io.on('connection', (client) => {
   client.on('sendMessage', function(message, user) {
@@ -15,7 +18,7 @@ io.on('connection', (client) => {
 
   client.on('addUser', function(username) {
     console.log('New user connected:', username);
-    const user = { id: client.id, username };
+    const user = { id: client.id, username, color: colors[++colorIdx % colors.length] };
     userList.push(user);
     client.emit('thisIsYou', user);
     console.log('Connected users:', userList);
@@ -31,7 +34,7 @@ io.on('connection', (client) => {
       console.log(`Someone disconnected because of ${reason}`);
     }
     idx = userList.indexOf(user);
-    if (idx > -1) console.log('Ur deleted:', userList.splice(idx, 1));
+    if (idx > -1) console.log('User removed:', userList.splice(idx, 1));
     console.log('Users left:', userList);
     io.emit('getUserList', userList);
   })

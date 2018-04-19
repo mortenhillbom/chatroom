@@ -3,8 +3,8 @@ import PropTypes from 'prop-types';
 import { Message } from '../Message';
 
 const Messages = ({ messages, currentUser }) => (
-  <div id="messages-parent">
-    <section id="messages">
+  <section id="messages-parent">
+    <div id="messages">
       <ul>
         {messages.map(message => (
           <Message
@@ -15,8 +15,8 @@ const Messages = ({ messages, currentUser }) => (
           />
         ))}
       </ul>
-    </section>
-  </div>
+    </div>
+  </section>
 );
 
 Messages.propTypes = {
@@ -27,12 +27,14 @@ Messages.propTypes = {
       user: PropTypes.shape({
         id: PropTypes.string.isRequired,
         username: PropTypes.string.isRequired,
+        color: PropTypes.string.isRequired,
       }).isRequired,
     }).isRequired
   ).isRequired,
   currentUser: PropTypes.shape({
     id: PropTypes.string.isRequired,
     username: PropTypes.string.isRequired,
+    color: PropTypes.string.isRequired,
   }).isRequired,
 };
 

@@ -23,6 +23,7 @@ class ChatRoomContainer extends React.Component {
     currentUser: PropTypes.shape({
       id: PropTypes.string.isRequired,
       username: PropTypes.string.isRequired,
+      color: PropTypes.string.isRequired,
     }),
     messages: PropTypes.arrayOf(
       PropTypes.shape({
@@ -31,6 +32,7 @@ class ChatRoomContainer extends React.Component {
         user: PropTypes.shape({
           id: PropTypes.string.isRequired,
           username: PropTypes.string.isRequired,
+          color: PropTypes.string.isRequired,
         }).isRequired,
       }).isRequired
     ).isRequired,
@@ -38,6 +40,7 @@ class ChatRoomContainer extends React.Component {
       PropTypes.shape({
         id: PropTypes.string.isRequired,
         username: PropTypes.string.isRequired,
+        color: PropTypes.string.isRequired,
       })
     ).isRequired,
   };

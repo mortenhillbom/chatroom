@@ -22,7 +22,7 @@ injectGlobal`
 
   #container {
       display: grid;
-      grid-template-columns: 1fr 3fr;
+      grid-template-columns: 1fr 4fr;
       grid-template-areas: "sidebar main";
       width: 100vw;
       height: 100vh;
@@ -44,6 +44,11 @@ injectGlobal`
       height: 100%;
   }
   
+  #user {
+      margin: 8px;
+      font-size: 20px;
+  }
+  
   #messages-parent {
       grid-area: messagelist;
       position: relative;
@@ -56,6 +61,16 @@ injectGlobal`
       overflow: scroll;
   }
   
+  #message {
+      border-radius: 15px;
+      padding: 15px;
+      margin: 3px;
+      display:inline-block;
+      max-width: 70%;
+      text-align: left;
+      clear: both;
+  }
+  
   #write-message {
       grid-area: newmessage;
       position: fixed;
@@ -63,7 +78,7 @@ injectGlobal`
       margin-left: 0px;
       border-top: 1px solid #3f3f3f;
       padding: 0px;
-      width: 75%;
+      width: 80%;
   }
   
   #write-message textarea {
@@ -73,6 +88,7 @@ injectGlobal`
       font-size: 20px;
       resize: none;
       width: 100%;
+      vertical-align:top;
   }
   
   #write-name {

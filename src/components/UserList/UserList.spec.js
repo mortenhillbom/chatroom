@@ -7,6 +7,7 @@ describe('UserList', () => {
     const wrapper = mount(
       <UserList
         users={() => {}}
+        currentUser={() => {}}
       />
     );
     expect(wrapper).toHaveLength(1);

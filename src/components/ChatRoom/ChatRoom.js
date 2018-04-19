@@ -6,17 +6,15 @@ import { WriteMessage } from '../WriteMessage';
 import { UserList } from '../UserList';
 
 const ChatRoom = ({ sendMessage, messages, users, currentUser }) => (
-  <section>
-    <div id="container">
-      <aside id="users">
-        <UserList users={users} />
-      </aside>
-      <section id="main">
-        <Messages messages={messages} currentUser={currentUser} />
-        <WriteMessage sendMessage={sendMessage} currentUser={currentUser} />
-      </section>
-    </div>
-  </section>
+  <div id="container">
+    <aside id="users">
+      <UserList users={users} currentUser={currentUser} />
+    </aside>
+    <section id="main">
+      <Messages messages={messages} currentUser={currentUser} />
+      <WriteMessage sendMessage={sendMessage} currentUser={currentUser} />
+    </section>
+  </div>
 );
 
 ChatRoom.propTypes = {
@@ -27,6 +25,7 @@ ChatRoom.propTypes = {
       user: PropTypes.shape({
         id: PropTypes.string.isRequired,
         username: PropTypes.string.isRequired,
+        color: PropTypes.string.isRequired,
       }).isRequired,
     }).isRequired
   ).isRequired,
@@ -35,11 +34,13 @@ ChatRoom.propTypes = {
     PropTypes.shape({
       id: PropTypes.string.isRequired,
       username: PropTypes.string.isRequired,
+      color: PropTypes.string.isRequired,
     }).isRequired
   ).isRequired,
   currentUser: PropTypes.shape({
     id: PropTypes.string.isRequired,
     username: PropTypes.string.isRequired,
+    color: PropTypes.string.isRequired,
   }).isRequired,
 };
 
