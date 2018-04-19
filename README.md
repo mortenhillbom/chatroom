@@ -1,3 +1,19 @@
+# Mortens Chatroom
+
+Halla! Her har jeg mekka sammen et lite chatroom.
+Har brukt react og redux (brukte boilerplaten deres) og websockets.
+
+Fikk ikke gjort den så innmari pen, men håper det går greit 😅
+
+Bare å sende meg en e-post hvis det er noe dere vil vite! Ellers kan vi jo ta eit litta skypings igjen!
+
+Live demo kan dere finne [HER!](http://35.204.2.177:5000/)
+
+
+(PS! Hvis man bytter fane eller vindu litt for lenge blir connectionen fort brutt, og man mottar ikke meldinger, 
+den bør komme tilbake igjen ganske ofte, og man dukker opp i brukerlista igjen med samme navn hvis man sender en melding...
+men kan fort være litt bugs rundt dette, bare så dere er advart 😅😅😅😅)
+
 # Chatroom
 [![generator-create-redux-app](https://img.shields.io/badge/built%20with-generator--create--redux--app-brightgreen.svg)](https://github.com/jonidelv/generator-create-redux-app)
 
@@ -32,4 +48,4 @@ Your app is ready to be deployed!
 
 Allows you to auto-generate boilerplate code for common parts of your
 application, specifically `component`s and `container`s.
-# Chatroom
+
