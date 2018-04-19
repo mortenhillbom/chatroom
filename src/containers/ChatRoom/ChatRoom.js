@@ -62,11 +62,13 @@ class ChatRoomContainer extends React.Component {
   };
 
   sendMessage = (message, user) => {
+    if (message === '') return;
     apiSendMessage(message, user);
     this.props.sendMessage({ message, user });
   };
 
   addUser = username => {
+    if (username === '') return;
     apiAddUser(username);
   };
 
