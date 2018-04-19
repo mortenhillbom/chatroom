@@ -10,7 +10,7 @@ Bare å sende meg en e-post hvis det er noe dere vil vite! Ellers kan vi jo ta e
 Live demo kan dere finne [HER!](http://35.204.2.177:5000/)
 
 
-(PS! Hvis man bytter fane eller vindu litt for lenge blir connectionen fort brutt, og man mottar ikke meldinger, 
+(PS! Hvis man bytter fane eller vindu litt for lenge blir connectionen av og til brutt, og man mottar ikke meldinger, 
 den bør komme tilbake igjen ganske ofte, og man dukker opp i brukerlista igjen med samme navn hvis man sender en melding...
 men kan fort være litt bugs rundt dette, bare så dere er advart 😅😅😅😅)
 
